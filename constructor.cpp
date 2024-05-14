@@ -2,30 +2,30 @@
 #include <string>
 using namespace std;
 
-class Mahasiswa
+class mahasiswa
 {
     public:
     int nim;
     string nama;
 
     public:
-    Mahasiswa()
+    mahasiswa()
     {
         nim = 0;
         nama = "";
     };
 
-    Mahasiswa(int iNim)
+    mahasiswa(int iNim)
     {
         nim = iNim;
     };
 
-    Mahasiswa(int iNama)
+    mahasiswa(string iNama)
     {
         nama = iNama;
     };
 
-    Mahasiswa(int iNim, string iNama)
+    mahasiswa(int iNim, string iNama)
     {
         nim = iNim;
         nama = iNama;
@@ -40,11 +40,11 @@ class Mahasiswa
 
 int main()
 {
-    Mahasiswa mhs1;
-    Mahasiswa mhs2(20);
-    Mahasiswa mhs3("Indra");
-    Mahasiswa mhs4(30, "Fauzan");
-
+    mahasiswa mhs1;
+    mahasiswa mhs2(20);
+    mahasiswa mhs3("Indra");
+    mahasiswa mhs4(30, "Fauzan");
+    
     mhs1.cetak();
     mhs2.cetak();
     mhs3.cetak();
